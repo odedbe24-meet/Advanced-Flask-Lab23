@@ -18,14 +18,17 @@ posts = {
     "https://uploads-ssl.webflow.com/5dd64bd3a930f96c82bd137a/63024ce64d943673cb004a4c_2022.07.17%20-%20Summer%20Day%201.png": "MEET summer!",
     "https://uploads-ssl.webflow.com/5dd64bd3a930f9d04abd1363/5de6d502d6d70c0ad49a060c_6.jpg": "#MEET_DU",
     "https://global-uploads.webflow.com/5fe28feebcae602620061802/5fe5401840671a36cd1d47d5_5de6d5024dd1a74670173aed_1-p-1080.jpeg": "Our lovely TAs!"}
-
-
+twitter = "https://twitter.com/"
+facebook = "https://facebook.com"
+instagram = "https://instagram.com"
+fivepx = "https://500px.com"
+email = "https://gmail.com"
 #####
 
 
 @app.route('/')  # '/' for the default page
 def home():
-    return render_template('index.html', link=image_link, bio=user_bio,posts=posts)
+    return render_template('index.html', link=image_link, bio=user_bio,posts=posts,twitter=twitter, facebook=facebook, instagram=instagram, fivepx=fivepx, email=email )
 
 
 @app.route('/about')  # '/' for the default page
